@@ -2,16 +2,16 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" href="/css/lightbox.css"  />
   </head>
   <body>
     <div class="container">
       {% include navigation.html %}
     </div>
-    <div class="container">
+    <!-- <div class="container"> -->
       {{ content }}
-    </div>
+    <!-- </div> -->
 
     <script src="/js/lightbox-plus-jquery.js"></script>
   </body>

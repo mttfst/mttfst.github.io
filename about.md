@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: container
 title: About
 ---
 # About page
