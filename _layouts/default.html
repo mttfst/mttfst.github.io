@@ -9,16 +9,25 @@
     <div class="container">
       {% include navigation.html %}
     </div>
+
     <!-- <div class="container"> -->
       {{ content }}
     <!-- </div> -->
 
+
     <script src="/js/lightbox-plus-jquery.js"></script>
-      <script>
+    <script>
+      var windowWidth = $(window).width();
+      var windowHeight = $(window).height();
+      //windowsize - 50px
+      var windowHeightFixed = windowHeight * 0.6 ;
+      var windowWidthFixed = windowWidth * 0.6;
       lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true,
-        'maxWidth':1500,
+        'disableScrolling': false,
+        'maxHeight': windowHeightFixed,
+        'maxWidth': windowWidthFixed,
       })
     </script>
   </body>
